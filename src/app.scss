@@ -1,0 +1,29 @@
+ .app{
+     height: 100vh;
+
+     .sections {
+         width: 100%;
+         height: calc(100vh - 70px);
+         background-color: aqua;
+         position: relative;
+         top: 70px;
+
+        //Add snap scrolling
+        scroll-snap-type: y mandatory;
+
+        //Remove scrollbar
+        scrollbar-width: none;  //for firefox browser
+        &::-webkit-scrollbar{   //for other browsers
+            display: none;
+        }
+
+        //For each section in sections
+        > * {
+            width: 100vw;
+            height: calc(100vh - 70px);
+
+            //Snap to the closest section
+            scroll-snap-align: start;
+        }
+     }
+ }

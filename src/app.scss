@@ -8,7 +8,8 @@
          position: relative;
          top: 70px;
 
-        //Add snap scrolling
+        //Add snap scrolling, but smooth
+        scroll-behavior: smooth;    //Doesnt work for safari/IE/Edge
         scroll-snap-type: y mandatory;
 
         //Remove scrollbar

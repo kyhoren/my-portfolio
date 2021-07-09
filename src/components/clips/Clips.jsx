@@ -2,7 +2,7 @@ import "./clips.scss"
 
 export default function Clips() {
     return (
-        <div className="clips">
+        <div className="clips" id="clips">
             
         </div>
     )

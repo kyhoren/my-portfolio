@@ -5,7 +5,9 @@ import Clips from "./components/clips/Clips";
 import Contact from "./components/contact/Contact";
 import "./app.scss"
 
+
 function App() {
+
   return (
     <div className="app">
       <NavBar />

@@ -1,5 +1,5 @@
 import "./navbar.scss";
-import { SocialIcon } from 'react-social-icons';
+import { Steam, Twitch } from '../../icons';
 
 export default function NavBar() {
 
@@ -11,9 +11,8 @@ export default function NavBar() {
                     
                 </div>
                 <div className="right">
-                    <SocialIcon url="https://twitch.tv/creosucks" target="_blank" /*bgColor="#ffffff"*/ fgColor="#fff" style={{height: 50, width: 50, marginRight: 5}}/>
-                    <SocialIcon url="https://www.youtube.com/channel/UCWhmuvN0Y062Kjo7OZHDbwQ" target="_blank" /*bgColor="#ffffff"*/ fgColor="#fff" style={{height: 50, width: 50, marginRight: 5}}/>
-                    <SocialIcon url="https://steamcommunity.com/id/creolegend" target="_blank" /*bgColor="#ffffff"*/ fgColor="#fff" style={{height: 50, width: 50}}/>
+                    <Twitch className="icon" />
+                    <Steam className="icon" />
                 </div>
             </div>
         </div>

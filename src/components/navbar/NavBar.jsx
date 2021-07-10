@@ -7,8 +7,14 @@ export default function NavBar() {
         <div className="navbar">
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="home">creo.</a>
-                    
+                    <a href="#home" className="home">creo.</a>
+                </div>
+                <div className="middle">
+                    <a href="#portfolio" className="links"> PORTFOLIO </a>
+                    <a href="#clips" className="links"> CLIPS </a>
+                    <a href="#stats" className="links"> STATS </a>
+                    <a href="#reviews" className="links"> REVIEWS </a>
+                    <a href="#contact" className="links"> CONTACT </a>
                 </div>
                 <div className="right">
                     <a href="https://twitch.tv/creosucks" target="_blank" rel="noreferrer"><Twitch className="icon" /></a>

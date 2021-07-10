@@ -11,10 +11,9 @@
     //Make it more of a priority than other components
     z-index: 2;
 
-
-
     .wrapper {
-        padding: 10px 30px;
+        padding: 5px 30px;
+        height: 90%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -24,18 +23,59 @@
             display: flex;
             align-items: center;
 
-            .home{
+            .home{  //'creo.'
                 font-size: 40px;
-                font-weight: 700;
+                font-style: italic;
+                font-weight: 500;
                 text-decoration: none;
                 color: inherit;
             }
         }
 
+        //Content in middle of NavBar
+        .middle{
+            li {    
+                display: inline;    //Make the <li> display in a line
+                list-style-type: none;
+            }
+            
+            .links{
+                margin-right: 5px;
+                text-decoration: none;
+                color: inherit;
+            }
+
+            //Line under the links when hovering over it
+            a {
+                position: relative;
+                text-decoration: none;
+            }
+            a:before {
+                content: "";
+                position: absolute;
+                width: 93%;
+                height: 4px;
+                bottom: -2px;
+                left: 0;
+                background-color: #fff;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+            }
+            a:hover:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+        }
+
+        //Content on Right side of NavBar
         .right{
             display: inline-flex;
 
-            .icon{
+            .icon{  //twitch and steam icons
                 width: 30px;
                 height: 30px;
                 display: inherit;
@@ -47,7 +87,6 @@
                 #iconMain{
                     fill: #fff;
                 }
-
                 #iconBg{
                     fill: #202527;
                 }

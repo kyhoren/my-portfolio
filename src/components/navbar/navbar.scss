@@ -3,16 +3,18 @@
 .navbar {
     width: 100%;
     height: 70px;
-    background-color: $mainColor;
-    color: #ffffff;
+    background-color: $bgColor;
+    color: $mainColor;
     position: fixed; 
     top: 0; 
+    border-bottom-style: solid;
+    border-color: $mainColor;
 
     //Make it more of a priority than other components
     z-index: 2;
 
     .wrapper {
-        padding: 5px 30px;
+        padding: 0px 30px;
         height: 90%;
         display: flex;
         align-items: center;
@@ -24,9 +26,9 @@
             align-items: center;
 
             .home{  //'creo.'
-                font-size: 40px;
+                font-size: 50px;
                 font-style: italic;
-                font-weight: 500;
+                font-weight: 800;
                 text-decoration: none;
                 color: inherit;
             }
@@ -34,40 +36,34 @@
 
         //Content in middle of NavBar
         .middle{
-            li {    
-                display: inline;    //Make the <li> display in a line
-                list-style-type: none;
-            }
             
             .links{
-                margin-right: 5px;
+                margin-right: 10px;
+                font-size: 20px;
                 text-decoration: none;
                 color: inherit;
             }
 
             //Line under the links when hovering over it
             a {
-                position: relative;
-                text-decoration: none;
+                padding:1px 6px;
+                display:inline-block;
+                position:relative;
             }
-            a:before {
-                content: "";
-                position: absolute;
-                width: 93%;
-                height: 4px;
-                bottom: -2px;
-                left: 0;
-                background-color: #fff;
-                visibility: hidden;
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transition: all 0.3s ease-in-out 0s;
-                transition: all 0.3s ease-in-out 0s;
+            a:after{
+                position:absolute;
+                left:50%;
+                height:4px;
+                bottom:-2px;
+                width:0%;
+                background-color: $mainColor;
+                display:block;
+                content:'';
+                transition: .4s ease-in-out;
             }
-            a:hover:before {
-                visibility: visible;
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
+            a:hover:after{
+                left:0;
+                width:100%;
             }
         }
 
@@ -85,10 +81,10 @@
 
                 //For changing the SVG inline fill color dynamically
                 #iconMain{
-                    fill: #fff;
+                    fill: $mainColor;
                 }
                 #iconBg{
-                    fill: #202527;
+                    fill: $bgColor;
                 }
 
             }

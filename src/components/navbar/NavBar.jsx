@@ -14,7 +14,6 @@ export default function NavBar() {
                     <a href="#clips" className="links"> CLIPS </a>
                     <a href="#stats" className="links"> STATS </a>
                     <a href="#reviews" className="links"> REVIEWS </a>
-                    <a href="#contact" className="links"> CONTACT </a>
                 </div>
                 <div className="right">
                     <a href="https://twitch.tv/creosucks" target="_blank" rel="noreferrer"><Twitch className="icon" /></a>

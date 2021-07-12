@@ -7,7 +7,7 @@ import './reviews.scss';
 export default function Reviews() {
     return (
         <div className="reviews" id="reviews">
-            
+            reviews
         </div>
     )
 }

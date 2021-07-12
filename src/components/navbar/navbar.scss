@@ -9,6 +9,7 @@
     top: 0; 
     border-bottom-style: solid;
     border-color: $mainColor;
+    transition: all 0.5s ease-in-out; 
 
     //Make it more of a priority than other components
     z-index: 2;
@@ -65,6 +66,30 @@
                 left:0;
                 width:100%;
             }
+
+            &.active{
+                //Line under the links when hovering over it
+                a {
+                    padding:1px 6px;
+                    display:inline-block;
+                    position:relative;
+                }
+                a:after{
+                    position:absolute;
+                    left:50%;
+                    height:4px;
+                    bottom:-2px;
+                    width:0%;
+                    background-color: $bgColor;
+                    display:block;
+                    content:'';
+                    transition: .4s ease-in-out;
+                }
+                a:hover:after{
+                    left:0;
+                    width:100%;
+                }
+            }
         }
 
         //Content on Right side of NavBar
@@ -82,12 +107,50 @@
                 //For changing the SVG inline fill color dynamically
                 #iconMain{
                     fill: $mainColor;
+                    transition: all 0.5s ease-in-out; 
+
                 }
                 #iconBg{
                     fill: $bgColor;
+                    transition: all 0.5s ease-in-out; 
+
                 }
 
             }
+
+            &.active{
+                .icon{  //twitch and steam icons
+                    width: 30px;
+                    height: 30px;
+                    display: inherit;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+    
+                    //For changing the SVG inline fill color dynamically
+                    #iconMain{
+                        fill: $bgColor;
+                        transition: all 0.5s ease-in-out; 
+
+                    }
+                    #iconBg{
+                        fill: $mainColor;
+                        transition: all 0.5s ease-in-out; 
+
+                    }
+    
+                }
+            }
         }
     }
+
+    //navbar active (changes color of bg and text)
+    &.active{
+        background-color: $mainColor;
+        color: $bgColor;
+        border-bottom-style: solid;
+        border-color: $bgColor;   
+        transition: all 0.5s ease-in-out; 
+    }
+
 }

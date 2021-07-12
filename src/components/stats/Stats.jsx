@@ -7,7 +7,7 @@ import './stats.scss';
 export default function Stats() {
     return (
         <div className="stats" id="stats">
-            
+            stats
         </div>
     )
 }

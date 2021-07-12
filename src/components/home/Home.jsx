@@ -12,8 +12,7 @@ export default function Home() {
             backDelay: 1500,
             backSpeed: 70,
             strings: ['"gaming warlord"', '"god gamer"', '"puzzle guy"', '"dirt diggler"',
-                      '"obvious cheater"', '"blatant walls"'
-                     ] 
+                      '"obvious cheater"', '"blatant walls"'] 
         })
 
     }, []);

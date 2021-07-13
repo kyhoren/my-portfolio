@@ -5,13 +5,15 @@
     display: flex;
 
     .left{
-        flex: 0.5;
+        flex: 0.45;
         overflow: hidden;
+        // background-color: aqua;
 
         .imgContainer{
-            width: 900px;
-            height: 900px;
-            margin-top: 100px;
+            width: 50vw;
+            height: 100vh;
+            margin-top: 15vh;
+            margin-right: 4vw;
             background-color: $accentColor;
             border-radius: 50%;
             display: flex;
@@ -21,13 +23,14 @@
 
             img{
                 height: 65%;
-                margin-bottom: 250px;
+                margin-bottom: 20vh;
             }
         }
     }
     .right{
-        flex: 0.5;
+        flex: 0.55;
         overflow: hidden;
+        // background-color: coral;
 
         .wrapper{
             width: 100%;
@@ -36,11 +39,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 250px;
+            // justify-content: center;
+            margin-top: 29vh;
             font-size: 20px;
             
-            #after{
-                padding-top: 10px;
+            #after{ //legend
+                padding-top: 1vh;
             }
 
             span{
@@ -76,6 +80,16 @@
                     opacity: 0;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    //If screen is bigger than 1080p, resize the font
+    .homePage .right .wrapper{
+        font-size: 40px;
+        span{
+            font-size: 100px;
         }
     }
 }

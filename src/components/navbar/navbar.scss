@@ -43,6 +43,8 @@
                 font-size: 20px;
                 text-decoration: none;
                 color: inherit;
+
+                overflow: hidden;
             }
 
             //Line under the links when hovering over it
@@ -50,6 +52,12 @@
                 padding:1px 6px;
                 display:inline-block;
                 position:relative;
+
+                //Remove scrollbar
+                scrollbar-width: none;  //for firefox browser
+                &::-webkit-scrollbar{   //for other browsers
+                display: none;
+                }
             }
             a:after{
                 position:absolute;

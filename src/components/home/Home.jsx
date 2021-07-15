@@ -4,6 +4,9 @@ import { useEffect, useRef } from 'react';
 
 export default function Home() {
 
+    /* 
+        Create and define the necessary parts for the typing animation on the home screen.
+    */
     const textRef = useRef();
 
     useEffect(()=>{
@@ -16,7 +19,9 @@ export default function Home() {
         })
 
     }, []);
-    
+
+    //-------------------------------------------------------------------------------------------------------------//
+
     return (
         <div className="homePage" id="home">
             <div className="left">

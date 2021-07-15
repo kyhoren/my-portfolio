@@ -75,7 +75,7 @@
                 width:100%;
             }
 
-            &.active{
+            &.pActive, &.sActive{
                 //Line under the links when hovering over it
                 a {
                     padding:1px 6px;
@@ -126,7 +126,7 @@
 
             }
 
-            &.active{
+            &.pActive, &.sActive{
                 .icon{  //twitch and steam icons
                     width: 30px;
                     height: 30px;
@@ -148,17 +148,41 @@
                     }
     
                 }
+
+                //When the youtube player is playing
+                &.playing{
+                    #iconMain{
+                        fill: white;
+                        transition: all 0.5s ease-in-out; 
+
+                    }
+                    #iconBg{
+                        fill: black;
+                        transition: all 0.5s ease-in-out; 
+
+                    }
+                }
             }
         }
     }
 
     //navbar active (changes color of bg and text)
-    &.active{
+    &.pActive, &.sActive{
         background-color: $mainColor;
         color: $bgColor;
         border-bottom-style: solid;
         border-color: $bgColor;   
         transition: all 0.5s ease-in-out; 
+
+        //When youtube player is playing
+        &.playing{
+            background-color: black;
+            color: white;
+            border-bottom-style: solid;
+            border-color: white;   
+            transition: all 0.5s ease-in-out; 
+
+        }
     }
 
 }

@@ -2,19 +2,20 @@
 
 .portfolio {
     background-color: $mainColor;
-    overflow: hidden;
+    // overflow: hidden;
     transition: all 0.5s ease-in-out; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
+    padding-top: calc(75vh / 60vw * 100%);
 
     .container{
         width: 60vw;
         height: 75vh;
         background-color: black;
         border: solid 3px white;
-        border-radius: 10%;
+        border-radius: 30px;
         // margin-top: 4%;
         // margin-left: 20%;
         // margin-right: 20%;
@@ -26,8 +27,8 @@
             margin: auto auto;
             border: solid 3px black;
             transition: all 0.5s ease-in-out; 
-
         }
+
     }
 
     //When the portfolio is 'active'

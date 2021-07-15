@@ -44,20 +44,36 @@ export default function Portfolio({ vidPlaying, setPlayStatus }) {
         setPlayStatus(false);   //Let App.jsx know that vid is no longer playing
     }
 
+
+    const style = {
+        // paddingTop: '0.5%',
+        backgroundColor: 'black',
+        overflow:'hidden'
+    };
+
+    const config = {
+        youtube: {
+            embedOptions: { width:'100%', height:'99%' }
+        }
+    };
+
     //-------------------------------------------------------------------------------------------------------------//
 
     return (
         <div className={"portfolio " + (playing && "active")} id="portfolio">
             <div className={"container " + (playing && "active")}>
-                <ReactPlayer id="YTplayer1" width="100%" height="100%" //controls
-                url="https://youtu.be/L_2A09NHVJk"
+                <ReactPlayer width="100%" height="100%" //controls
+                className="player"
+                // style={style}
+                config={config}
+                // url="https://youtu.be/L_2A09NHVJk"
                 // url="https://youtu.be/fvWxJ-5nM5I"
-                // url="https://youtu.be/COe-AzPeQaY"
+                url="https://youtu.be/COe-AzPeQaY"
                 playing={vidPlaying}
                 volume={0.5}
                 onPlay={handlePlay}
                 onPause={handlePause}
-                onEnded={handlePause} />
+                onEnded={handlePause} /> 
             </div>
         </div>
     )

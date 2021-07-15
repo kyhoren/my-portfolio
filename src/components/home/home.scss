@@ -33,7 +33,7 @@
         flex: 0.55;
         overflow: hidden;
 
-        .wrapper{
+        .wrapper{   //creo 'nickname' legend
             width: 100%;
             height: 100%;
             color: $mainColor;
@@ -41,7 +41,7 @@
             flex-direction: column;
             align-items: center;
             margin-top: 29vh;
-            font-size: 20px;
+            font-size: 2vw;
             
             #after{ //legend
                 padding-top: 1vh;
@@ -49,7 +49,7 @@
 
             span{
                 color: $accentColor;
-                font-size: 70px;
+                font-size: 6vw;
                 align-self: center;
                 position: relative;
             }
@@ -80,16 +80,6 @@
                     opacity: 0;
                 }
             }
-        }
-    }
-}
-
-@media screen and (min-width: 1921px) {
-    //If screen is bigger than 1080p, resize the font
-    .homePage .right .wrapper{
-        font-size: 40px;
-        span{
-            font-size: 100px;
         }
     }
 }

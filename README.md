@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Portfolio/Showcase of My Best Gaming Moments
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+I wanted to have a place to showcase all of my best gaming-related edits, clips (funny and impressive), and stats. </br>
+In order to achieve this, I decided to code my own website from scratch using ReactJS. </br></br>
+The structure of the showcase is as follows: 
 
-In the project directory, you can run:
+* [NavBar](#navbar)
+* [Home](#home-section)
+* [Portfolio](#portfolio-section)
+* [Clips](#clips-section)
+* [Stats](#stats-section)
+* [Reviews](#reviews-section)
 
-### `npm start`
+## NavBar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The Navigation Bar at the top of the webpage allows the user to move around to a specified section of the webpage without needing to scroll.</br></br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Clicking the 'creo.' text in the top left-hand corner takes the user back to the home page.
+* Clicking the 'Portfolio' text takes the user to the Portfolio section, and so-on and so-on.
+* Clicking the Twitch Icon (the left icon on the top right corner) directs the user to my streaming channel.
+* Clicking the Steam Icon (right icon in the top right corner) directs the user to my Steam profile.
 
-### `npm test`
+## Home Section
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The home section contains the avatar I use in my gaming-related endeavors as well as my in-game username with some nicknames 
+in quotes from friends and opponents alike.
 
-### `npm run build`
+## Portfolio Section
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The portfolio section contains a carousel that displays youtube video players, each with one of the videos I edited and released.</br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The arrows on either side of the player allow the user to select which of the videos they'd like to watch.
+Clicking play on any one of these videos expands it to 'fullscreen', which removes the arrows for navigating the carousel, and changes the background color of the Navigation Bar and Portfolio Section for a more pleasureable viewing experience. When the video is either paused or it finishes, the player automatically exits 'fullscreen', reapplies the arrows for navigating, and restores the original background colors of the Navigation Bar and Portfolio Sections. </br></br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Also implemented is a feature where if the user scrolls out of the portfolio section (i.e. the video player is no longer in view), then the video automatically pauses. 
 
-### `npm run eject`
+## Clips Section
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+For the clips section, my vision is to display clips that have been stored in cloud storage. Idea is similar to [streamable](https://streamable.com).</br></br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In order to achieve this, I want to implement a search bar that will allow the user to search for specific tags (such as the name of a game, or people who appear in the clip). Adding tags will filter the clips to only show the relevant ones.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Stats Section
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For the stats section, my vision is to interact with the APIs of the games for which I want to display my stats (my performance in these games).The idea is loosely based off of sites like [this](https://tracker.gg).</br></br>
 
-## Learn More
+Upon receiving the data I want, I want to possibly implement another carousel, but this time to display stats per game in a minimalist and aesthetically pleasing way.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Reviews Section
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+And lastly, for the reviews section, I would like to pull comments from my steam profile using the Steam API and display them in an aesthetically pleasing way.
 
-### Code Splitting
+# Roadmap: Things left to do
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] Implement the clips section
+- [ ] Implement the stats section
+- [ ] Implement the reviews section

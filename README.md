@@ -13,6 +13,20 @@ The structure of the showcase is as follows:
 * [Stats](#stats-section)
 * [Reviews](#reviews-section)
 
+# Installation
+
+Clone the repository and navigate to the project directory. Then run 
+```
+npm install
+```
+to install all the necessary dependencies.</br></br>
+
+Then run
+```
+npm start
+```
+to view the project on localhost:3000.
+
 ## NavBar
 
 The Navigation Bar at the top of the webpage allows the user to move around to a specified section of the webpage without needing to scroll.</br></br>

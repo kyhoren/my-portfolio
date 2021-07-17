@@ -20,8 +20,10 @@ export default function Home() {
 
     }, []);
 
+
     //-------------------------------------------------------------------------------------------------------------//
 
+    
     return (
         <div className="homePage" id="home">
             <div className="left">

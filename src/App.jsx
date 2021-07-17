@@ -10,6 +10,15 @@ import "./app.scss"
 
 function App() {
 
+  /*
+    Keep track of the status of the video player in order to implement the auto-pause/resume functionality.
+  */
+  const [vidPlaying, setPlayStatus] = useState(false);  //Status of whether a video is playing or not
+
+  
+  //-------------------------------------------------------------------------------------------------------------//
+
+
   /* 
     Make two intersection observers, one to watch the portfolio section, and one to watch the stats section (the gray pages).
     Split up the intersection observers to add auto pausing for video in portfolio section more easily.
@@ -66,6 +75,9 @@ function App() {
   }, {threshold: 0.5});    //Changes how much of the observed component has to be on screen to be 'seen'
 
 
+  //-------------------------------------------------------------------------------------------------------------//
+
+
   /*
     Get the references to the sections in question and to the NavBar component containers for CSS manipulation.
     Also set the observers to observe their specified section.
@@ -91,14 +103,8 @@ function App() {
   checkLoaded();
 
 
-
-  /*
-    Keep track of the status of the video player in order to implement the auto-pause/resume functionality.
-  */
-  const [vidPlaying, setPlayStatus] = useState(false);  //Status of whether a video is playing or not
-  
-
   //-------------------------------------------------------------------------------------------------------------//
+
 
   return (
     <div className="app">

@@ -77,6 +77,7 @@ And lastly, for the reviews section, I would like to pull comments from my steam
 
 - Snap scrolling
 - Change CSS based on User Inputs
+- Dynamically sizes content depending on Viewport size (haven't tested on mobile)
 
 # Roadmap: Things left to do
 

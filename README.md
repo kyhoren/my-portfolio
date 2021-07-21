@@ -12,6 +12,7 @@ The structure of the showcase is as follows:
 * [Clips](#clips-section)
 * [Stats](#stats-section)
 * [Reviews](#reviews-section)
+* [Extra Features](#extra-features)
 
 # Installation
 
@@ -41,6 +42,8 @@ The Navigation Bar at the top of the webpage allows the user to move around to a
 The home section contains the avatar I use in my gaming-related endeavors as well as my in-game username with some nicknames 
 in quotes from friends and opponents alike.
 
+![Home Page](https://i.imgur.com/VndQEzb.gif)
+
 ## Portfolio Section
 
 The portfolio section contains a carousel that displays youtube video players, each with one of the videos I edited and released.</br>
@@ -48,7 +51,11 @@ The portfolio section contains a carousel that displays youtube video players, e
 The arrows on either side of the player allow the user to select which of the videos they'd like to watch.
 Clicking play on any one of these videos expands it to 'fullscreen', which removes the arrows for navigating the carousel, and changes the background color of the Navigation Bar and Portfolio Section for a more pleasureable viewing experience. When the video is either paused or it finishes, the player automatically exits 'fullscreen', reapplies the arrows for navigating, and restores the original background colors of the Navigation Bar and Portfolio Sections. </br></br>
 
-Also implemented is a feature where if the user scrolls out of the portfolio section (i.e. the video player is no longer in view), then the video automatically pauses. 
+![Carousel Movement](https://i.imgur.com/SVd1imk.gif) </br>
+![Play/Pause](https://i.imgur.com/h9FPUR2.gif)
+
+Also implemented is a feature where if the user scrolls out of the portfolio section (i.e. the video player is no longer in view), then the video automatically pauses. </br> 
+![Scroll Pause](https://i.imgur.com/2XJhlO0.gif)
 
 ## Clips Section
 
@@ -65,6 +72,11 @@ Upon receiving the data I want, I want to possibly implement another carousel, b
 ## Reviews Section
 
 And lastly, for the reviews section, I would like to pull comments from my steam profile using the Steam API and display them in an aesthetically pleasing way.
+
+## Extra Features
+
+- Snap scrolling
+- Change CSS based on User Inputs
 
 # Roadmap: Things left to do
 

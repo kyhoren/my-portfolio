@@ -43,7 +43,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: calc(75vh / 60vw * 100%);  //For maintaining aspect ratio
+            --viewWidth: 60vw;
+            --viewHeight: 75vh;
+            padding-top: calc(--viewHeight / --viewWidth * 100%);  //For maintaining aspect ratio
             transition: all 0.5s ease-in-out;
     
             .video-container{

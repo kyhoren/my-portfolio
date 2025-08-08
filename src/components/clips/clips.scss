@@ -3,3 +3,16 @@
 .clips{
     background-color: $bgColor;
 }
+
+#clipSections {
+    display: flex;
+
+    #people {
+        background-color:lightblue;
+        width: 10%;
+    }
+    #clipData {
+        background-color:lightcoral;
+        width: 90%;
+    }
+}

@@ -59,9 +59,12 @@ Also implemented is a feature where if the user scrolls out of the portfolio sec
 
 ## Clips Section
 
-For the clips section, my vision is to display clips that have been stored in cloud storage. Idea is similar to [streamable](https://streamable.com).</br></br>
+For the clips section, my vision is to display clips that have been stored in a youtube account. I will use the YouTube API to get the data of all videos uploaded to that account and have a way to search on the people in the games, and the game names, to find clips.</br></br>
 
-In order to achieve this, I want to implement a search bar that will allow the user to search for specific tags (such as the name of a game, or people who appear in the clip). Adding tags will filter the clips to only show the relevant ones.
+In order to achieve this, I want to implement a search bar that will allow the user to search for specific tags (such as the name of a game, or people who appear in the clip). Adding tags will filter the clips to only show the relevant ones (where ALL conditions are met -- so if someone selects two people and a game, the tags must include 
+both people's names and the game name).
+
+I also want a way to upload videos directly to said youtube account (and add appropriate tags).
 
 ## Stats Section
 
